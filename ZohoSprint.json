@@ -238,7 +238,7 @@
     {
       "parameters": {
         "toolDescription": "Makes an HTTP request and returns the required item type id.",
-        "url": "=https://sprintsapi.zoho.in/zsapi/team/60064645923/projects/{{ $json.project_id }}/itemtype/?action=data&index=1&range=50",
+        "url": "=https://sprintsapi.zoho.in/zsapi/team/{{teamid}}/projects/{{ $json.project_id }}/itemtype/?action=data&index=1&range=50",
         "authentication": "genericCredentialType",
         "genericAuthType": "httpHeaderAuth",
         "options": {}
@@ -261,7 +261,7 @@
     {
       "parameters": {
         "toolDescription": "Makes an HTTP request and returns the required priority id.",
-        "url": "=https://sprintsapi.zoho.in/zsapi/team/60064645923/projects/{{ $json.project_id }}/priority/?action=data&index=1&range=10",
+        "url": "=https://sprintsapi.zoho.in/zsapi/team/{{teamid}}/projects/{{ $json.project_id }}/priority/?action=data&index=1&range=10",
         "authentication": "genericCredentialType",
         "genericAuthType": "httpHeaderAuth",
         "options": {}
@@ -284,7 +284,7 @@
     {
       "parameters": {
         "method": "POST",
-        "url": "=https://sprintsapi.zoho.in/zsapi/team/60064645923/projects/{{ $json.output.project_id }}/sprints/{{ $json.output.sprint_id }}/item/",
+        "url": "=https://sprintsapi.zoho.in/zsapi/team/{{teamid}}/projects/{{ $json.output.project_id }}/sprints/{{ $json.output.sprint_id }}/item/",
         "authentication": "genericCredentialType",
         "genericAuthType": "httpHeaderAuth",
         "sendBody": true,
@@ -318,7 +318,7 @@
         -192
       ],
       "id": "15e119c2-2c3b-43cf-80d5-6d3d3fb3d415",
-      "name": "worked!3",
+      "name": "Create Item",
       "credentials": {
         "httpHeaderAuth": {
           "id": "PEWzjvGacsfrIu7B",
@@ -500,7 +500,7 @@
       "main": [
         [
           {
-            "node": "worked!3",
+            "node": "Create Item",
             "type": "main",
             "index": 0
           }
